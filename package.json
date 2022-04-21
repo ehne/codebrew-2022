@@ -1,0 +1,24 @@
+{
+  "name": "codebrew-2022",
+  "version": "1.0.0",
+  "description": "hihi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehne/codebrew-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehne/codebrew-2022/issues"
+  },
+  "homepage": "https://github.com/ehne/codebrew-2022#readme",
+  "dependencies": {
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
