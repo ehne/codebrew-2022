@@ -26,5 +26,9 @@
     "react-dom": "^18.0.0",
     "styletron-engine-atomic": "^1.4.8",
     "styletron-react": "^6.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5"
   }
 }
