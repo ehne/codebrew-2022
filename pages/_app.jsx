@@ -10,8 +10,8 @@ const Container = ({children}) => (
   maxWidth={["100%", "40em"]}
   marginLeft="auto" 
   marginRight="auto" 
-  paddingLeft="scale500" 
-  paddingRight="scale500">
+  padding="scale500" 
+  >
     {children}
 </Block>
 );
@@ -22,6 +22,7 @@ export default class MyApp extends App {
     return (
       <StyletronProvider value={styletron}>
         <BaseProvider theme={LightTheme}>
+
           <Container>
             <Component {...pageProps} />
           </Container>
