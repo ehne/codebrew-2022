@@ -1,0 +1,828 @@
+{
+    "Product": {
+        "category": "Category",
+        "Ref - unopened": "Ref - unopened",
+        "Ref - opened": "Ref - opened",
+        "Freezer": "Freezer",
+        "Shelf": "Shelf"
+    },
+    "Butter": {
+        "category": "Dairy",
+        "Ref - unopened": "30",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Buttermilk": {
+        "category": "Dairy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Cheese, hard (such as cheddar, swiss, block parmesan)": {
+        "category": "Dairy",
+        "Ref - unopened": "180",
+        "Ref - opened": "21",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Parmesan, shredded": {
+        "category": "Dairy",
+        "Ref - unopened": "30",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Shredded cheddar, mozzarella, etc.": {
+        "category": "Dairy",
+        "Ref - unopened": "30",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Cheese, processed slices": {
+        "category": "Dairy",
+        "Ref - unopened": "30",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Cheese, soft (such as Brie, Bel Paese)": {
+        "category": "Dairy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Cottage cheese, ricotta": {
+        "category": "Dairy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Cream cheese": {
+        "category": "Dairy",
+        "Ref - unopened": "14",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Cream, whipping, ultrapasteurized": {
+        "category": "Dairy",
+        "Ref - unopened": "30",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Whipped, sweetened": {
+        "category": "Dairy",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Aerosol can, real whipped cream": {
+        "category": "Dairy",
+        "Ref - unopened": "21",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Aerosol can, nondairy topping": {
+        "category": "Dairy",
+        "Ref - unopened": "90",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Cream, half-and-half": {
+        "category": "Dairy",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Dips, sour cream based": {
+        "category": "Dairy",
+        "Ref - unopened": "14",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Egg substitutes, liquid": {
+        "category": "Dairy",
+        "Ref - unopened": "10",
+        "Ref - opened": "3",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Eggnog, commercial": {
+        "category": "Dairy",
+        "Ref - unopened": "21",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Eggs, in shell": {
+        "category": "Dairy",
+        "Ref - unopened": "2",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Margarine": {
+        "category": "Dairy",
+        "Ref - unopened": "180",
+        "Ref - opened": "NA",
+        "Freezer": "365",
+        "Shelf": "NA"
+    },
+    "Milk, plain or flavored": {
+        "category": "Dairy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Sour cream": {
+        "category": "Dairy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Yogurt": {
+        "category": "Dairy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Soy or rice beverage, refrigerated": {
+        "category": "Soy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Tofu": {
+        "category": "Soy",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "150",
+        "Shelf": "NA"
+    },
+    "Miso": {
+        "category": "Soy",
+        "Ref - unopened": "90",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Lean fish (cod, flounder, haddock, halibut, sole, etc.)": {
+        "category": "Fish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Lean fish (pollock, ocean perch, rockfish, sea trout)": {
+        "category": "Fish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Fatty fish (bluefish, mackerel, mullet, salmon, tuna, etc.)": {
+        "category": "Fish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "60",
+        "Shelf": "NA"
+    },
+    "Caviar, fresh, in jar": {
+        "category": "Fish",
+        "Ref - unopened": "7",
+        "Ref - opened": "2",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Cooked fish, all": {
+        "category": "Fish",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Surimi seafood": {
+        "category": "Fish",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "270",
+        "Shelf": "NA"
+    },
+    "Smoked herring": {
+        "category": "Fish",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "60",
+        "Shelf": "NA"
+    },
+    "Smoked salmon": {
+        "category": "Fish",
+        "Ref - unopened": "5",
+        "Ref - opened": "NA",
+        "Freezer": "60",
+        "Shelf": "NA"
+    },
+    "Shrimp, scallops, crayfish, squid": {
+        "category": "Shellfish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Shucked clams, mussels and oysters": {
+        "category": "Shellfish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Crab meat, fresh": {
+        "category": "Shellfish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Crab meat, pasteurized": {
+        "category": "Shellfish",
+        "Ref - unopened": "180",
+        "Ref - opened": "3",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Crab legs, king, dungeness, snow": {
+        "category": "Shellfish",
+        "Ref - unopened": "5",
+        "Ref - opened": "NA",
+        "Freezer": "270",
+        "Shelf": "NA"
+    },
+    "Live clams, mussels, crab and oysters": {
+        "category": "Shellfish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "60",
+        "Shelf": "NA"
+    },
+    "Live lobsters": {
+        "category": "Shellfish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "60",
+        "Shelf": "NA"
+    },
+    "Lobster tails": {
+        "category": "Shellfish",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Cooked shellfish, all": {
+        "category": "Shellfish",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Beef, lamb, pork or veal chops, steaks,roasts": {
+        "category": "Meat - fresh",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Ground meat": {
+        "category": "Meat - fresh",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Variety meats (liver, tongue, chitterlings, etc.)": {
+        "category": "Meat - fresh",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Cooked meats (after home cooking)": {
+        "category": "Meat - fresh",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "60",
+        "Shelf": "NA"
+    },
+    "Bacon": {
+        "category": "Meat - processed",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Corned beef, in pouch with pickling juices": {
+        "category": "Meat - processed",
+        "Ref - unopened": "5",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Ham, canned (\"keep refrigerated\" label)": {
+        "category": "Meat - processed",
+        "Ref - unopened": "180",
+        "Ref - opened": "NA",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Ham, fully cooked, whole": {
+        "category": "Meat - processed",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Ham, fully cooked, slices or half": {
+        "category": "Meat - processed",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Ham, cook before eating": {
+        "category": "Meat - processed",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Hot dogs": {
+        "category": "Meat - processed",
+        "Ref - unopened": "14",
+        "Ref - opened": "7",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Lunch meats, sealed in package": {
+        "category": "Meat - processed",
+        "Ref - unopened": "14",
+        "Ref - opened": "3",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Sausage, raw, bulk type": {
+        "category": "Meat - processed",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Sausage, smoked links, patties": {
+        "category": "Meat - processed",
+        "Ref - unopened": "7",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Sausage, hard, dry (pepperoni), sliced": {
+        "category": "Meat - processed",
+        "Ref - unopened": "14",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Chicken or turkey, whole": {
+        "category": "Poultry- fresh",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "365",
+        "Shelf": "NA"
+    },
+    "Chicken or turkey, parts": {
+        "category": "Poultry- fresh",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "270",
+        "Shelf": "NA"
+    },
+    "Duckling or goose, whole": {
+        "category": "Poultry- fresh",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Giblets": {
+        "category": "Poultry- fresh",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "270",
+        "Shelf": "NA"
+    },
+    "": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "NA",
+        "Ref - opened": "NA",
+        "Freezer": "",
+        "Shelf": "NA"
+    },
+    "Chicken nuggets, patties": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Cooked poultry dishes": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Fried chicken": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Ground turkey or chicken": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "90",
+        "Shelf": "NA"
+    },
+    "Small goods": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "14",
+        "Ref - opened": "3",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Pieces covered with broth or gravy": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "1",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Rotisserie chicken": {
+        "category": "Poultry - cooked/processed",
+        "Ref - unopened": "3",
+        "Ref - opened": "NA",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Apples": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "21",
+        "Freezer": "NA",
+        "Shelf": "1"
+    },
+    "Apricots": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "14",
+        "Freezer": "NA",
+        "Shelf": "Until ripe"
+    },
+    "Avocados": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "NA",
+        "Shelf": "Until ripe"
+    },
+    "Bananas": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "2",
+        "Freezer": "30",
+        "Shelf": "Until ripe"
+    },
+    "Berries, cherries": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "1",
+        "Freezer": "120",
+        "Shelf": "NA"
+    },
+    "Citrus Fruit": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "NA",
+        "Shelf": "10"
+    },
+    "Coconuts, fresh": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "14",
+        "Freezer": "NA",
+        "Shelf": "7"
+    },
+    "Coconut, shredded": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "NA",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Grapes": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "30",
+        "Shelf": "1"
+    },
+    "Kiwi Fruit": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "NA",
+        "Shelf": "Until ripe"
+    },
+    "Melons": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "30",
+        "Shelf": "1"
+    },
+    "Papaya, mango": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "NA",
+        "Shelf": "3"
+    },
+    "Peaches, nectarines": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "Sliced, lemon juice & sugar, 2 months",
+        "Shelf": "Until ripe"
+    },
+    "Pears, Plums": {
+        "category": "FRUITS",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "NA",
+        "Shelf": "3"
+    },
+    "Artichokes, whole": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "NA",
+        "Shelf": "1"
+    },
+    "Asparagus": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "240",
+        "Shelf": "NA"
+    },
+    "Beans, green or wax": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "240",
+        "Shelf": "NA"
+    },
+    "Beets": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "180",
+        "Shelf": "1"
+    },
+    "Bok choy": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "2",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Broccoli, raab, rapini": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Brussels sprouts": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Cauliflower": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Cabbage": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Carrots, parsnips": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "21",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Celery": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Corn on the cob": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "1",
+        "Freezer": "240",
+        "Shelf": "NA"
+    },
+    "Cucumbers": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "4",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Eggplant": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "180",
+        "Shelf": "1"
+    },
+    "Garlic": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "30",
+        "Shelf": "30"
+    },
+    "Ginger Root": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "30",
+        "Shelf": "1"
+    },
+    "Greens": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "1",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Herbs, fresh": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Leeks": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Lettuce, iceberg": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Lettuce, leaf": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "3",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Mushrooms": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "2",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Okra": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "2",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Onions": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "60",
+        "Freezer": "300",
+        "Shelf": "14"
+    },
+    "Spring onion": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Parsley, cilantro": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "30",
+        "Shelf": "NA"
+    },
+    "Peppers, bell or chile": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "4",
+        "Freezer": "180",
+        "Shelf": "NA"
+    },
+    "Potatoes": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "7",
+        "Freezer": "300",
+        "Shelf": "30"
+    },
+    "Radishes": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "10",
+        "Freezer": "NA",
+        "Shelf": "NA"
+    },
+    "Rutabagas": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "14",
+        "Freezer": "240",
+        "Shelf": "7"
+    },
+    "Spinach": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "1",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Squash": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "4",
+        "Freezer": "300",
+        "Shelf": "NA"
+    },
+    "Turnips": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "14",
+        "Freezer": "240",
+        "Shelf": "NA"
+    },
+    "Tomatoes": {
+        "category": "VEGETABLES",
+        "Ref - unopened": "NA",
+        "Ref - opened": "2",
+        "Freezer": "60",
+        "Shelf": "Ripe"
+    }
+}

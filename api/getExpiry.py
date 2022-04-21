@@ -9,11 +9,13 @@ def convertToJSON(filename):
         csvReader = csv.reader(csvfile, delimiter = ',')
         for row in csvReader:
             data[row[1]] = {"category": row[0], "Ref - unopened": row[2], "Ref - opened": row[3], "Freezer": row[4], "Shelf": row[5]}
-
+            print(data[row[1]])
+            
     with open(filename2, 'w') as jsonFile:
         jsonFile.write(json.dumps(data, indent = 4))
 
 def expirationDate(url):
+    expiryDate = 0
     URL = url.split("=")
     item = URL[1][:-2]
     time = URL[2][:-2]
@@ -40,12 +42,15 @@ def expirationDate(url):
     convertToJSON("BestBefore.csv")
 
     #lukes code for using JSON
-    openJson = open('keyboardsmash.json')
+    openJson = open('jsonfiletext.json')
     expiryDict = json.load(openJson)
-    expiryList = list(expiryDict.items())[0][1]
+    expiryList = list(expiryDict.items())
 
+    print(expiryList)
     for dictionary in expiryList:
-        if expiryList == item:
+        print(dictionary)
+        if dictionary == item:
+            print("bananavuifahbijkan")
             longevity = expiryList[item][header]
             category = expiryList[item]["category"]
 
@@ -55,8 +60,8 @@ def expirationDate(url):
             datePurchased = date(year,month,date)
 
             # creating an expiration date
-            expirationDate = datePurchased + timedelta(days = longevity)
+            expiryDate = datePurchased + timedelta(days = longevity)
 
-    return {"product": item, "time": time, "storage method": storageMethod, "expiry": expirationDate, "category": category, "opened": opened}
+    return {"product": item, "time": time, "storage method": storageMethod, "expiry": expiryDate, "category": category, "opened": opened}
 
 print(expirationDate("api/getExpiry?q=Buttermilk&t=2022-04-21&s=Refridgerator&o=opened"))
