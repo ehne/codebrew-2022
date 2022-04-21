@@ -13,10 +13,9 @@ const ContainerBox = styled(Block, ({$theme}) => ({
   padding: $theme.sizing.scale1000,
   paddingLeft: $theme.sizing.scale1400,
   paddingRight: $theme.sizing.scale1400,
-
 }))
 
-const Nonidealstate = ({Icon, text, action}) => {
+const NonIdealState = ({Icon, text, action}) => {
   return (
     <ContainerBox>
       <Icon size={64} color="contentTertiary"/>
@@ -28,4 +27,4 @@ const Nonidealstate = ({Icon, text, action}) => {
   );
 }
 
-export default Nonidealstate;
+export default NonIdealState;
