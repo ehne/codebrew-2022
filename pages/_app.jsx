@@ -1,20 +1,11 @@
 import React from 'react';
 import App from 'next/app';
 import {Provider as StyletronProvider} from 'styletron-react';
-import {LightTheme, BaseProvider} from 'baseui';
+import {DarkTheme, LightTheme, BaseProvider} from 'baseui';
 import {Block} from 'baseui/block';
 import {styletron} from '../lib/styletron';
-
-const Container = ({children}) => (
-<Block 
-  maxWidth={["100%", "40em"]}
-  marginLeft="auto" 
-  marginRight="auto" 
-  padding="scale500" 
-  >
-    {children}
-</Block>
-);
+import BottomNav from '../components/BottomNav';
+import ScreenContainer from '../components/ScreenContainer';
 
 export default class MyApp extends App {
   render() {
@@ -22,10 +13,13 @@ export default class MyApp extends App {
     return (
       <StyletronProvider value={styletron}>
         <BaseProvider theme={LightTheme}>
-
-          <Container>
-            <Component {...pageProps} />
-          </Container>
+          <Block backgroundColor="backgroundPrimary" color="primaryA" minHeight="100vh" >
+            <ScreenContainer>
+              <Component {...pageProps} />
+            </ScreenContainer>
+          </Block>
+         
+          <BottomNav />
         </BaseProvider>
       </StyletronProvider>
     );
