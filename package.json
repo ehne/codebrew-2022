@@ -4,7 +4,10 @@
   "description": "hihi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,11 @@
   },
   "homepage": "https://github.com/ehne/codebrew-2022#readme",
   "dependencies": {
+    "baseui": "^11.0.1",
     "next": "^12.1.5",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "styletron-engine-atomic": "^1.4.8",
+    "styletron-react": "^6.0.2"
   }
 }
