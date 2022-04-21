@@ -1,6 +1,5 @@
-import requests
-import datetime
 import csv
+import json
 
 def convertToJSON(filename):
     data = {}
@@ -49,8 +48,12 @@ def expirationDate(url):
             longevity = expiryList[item][header]
             category = expiryList[item]["category"]
 
+            year = time[0:4]
+            month = time[5:7]
+            date = time[8:10]
+
             # creating an expiration date
-            expirationDate = time + timedelta(days = longevity)
+           # expirationDate = time + timedelta(days = longevity)
 
     return {"product": item, "time": time, "storage method": storageMethod, "expiry": expirationDate, "category": category, "opened": opened}
 
