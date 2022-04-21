@@ -1,5 +1,6 @@
 import csv
 import json
+from datetime import *
 
 def convertToJSON(filename):
     data = {}
@@ -51,9 +52,11 @@ def expirationDate(url):
             year = time[0:4]
             month = time[5:7]
             date = time[8:10]
+            datePurchased = date(year,month,date)
+            
 
             # creating an expiration date
-           # expirationDate = time + timedelta(days = longevity)
+            expirationDate = datePurchased + timedelta(days = longevity)
 
     return {"product": item, "time": time, "storage method": storageMethod, "expiry": expirationDate, "category": category, "opened": opened}
 
