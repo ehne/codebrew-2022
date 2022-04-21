@@ -37,7 +37,7 @@ def expirationDate(url):
         header = "Shelf"
     
 
-    convertToJSON("Best Before.csv")
+    convertToJSON("BestBefore.csv")
 
     #lukes code for using JSON
     openJson = open('keyboardsmash.json')
@@ -53,10 +53,10 @@ def expirationDate(url):
             month = time[5:7]
             date = time[8:10]
             datePurchased = date(year,month,date)
-            
 
             # creating an expiration date
             expirationDate = datePurchased + timedelta(days = longevity)
 
     return {"product": item, "time": time, "storage method": storageMethod, "expiry": expirationDate, "category": category, "opened": opened}
 
+print(expirationDate("api/getExpiry?q=Buttermilk&t=2022-04-21&s=Refridgerator&o=opened"))
