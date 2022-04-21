@@ -5,6 +5,7 @@ import {Combobox} from 'baseui/combobox';
 import {Button} from 'baseui/button';
 import {DatePicker} from 'baseui/datepicker';
 import {ChevronRight, Plus} from 'baseui/icon';
+import {Checkbox} from 'baseui/checkbox';
 
 const Manual = () => {
   return (
@@ -39,6 +40,16 @@ const Manual = () => {
           }
         />
       </FormControl>
+      <FormControl>
+      <Checkbox
+        checked
+        //checkmarkType="toggle"
+        //labelPlacement="left"
+      >
+        This product is opened
+      </Checkbox>
+      </FormControl>
+      
       <Button
         onClick={() => alert("click")}
         endEnhancer={ChevronRight}
