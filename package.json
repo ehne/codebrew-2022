@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "license-checker --production --json > license_info.json && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +22,7 @@
   "dependencies": {
     "baseui": "^11.0.1",
     "formik": "^2.2.9",
+    "license-checker": "^25.0.1",
     "next": "^12.1.5",
     "pouchdb": "^7.3.0",
     "pouchdb-browser": "^7.3.0",

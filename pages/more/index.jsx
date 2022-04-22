@@ -1,4 +1,6 @@
 import React from 'react';
+import fs from 'fs';
+import path, {join} from 'path';
 import { Button } from 'baseui/button';
 import { useDB } from 'react-pouchdb';
 import {ListItem, ListItemLabel, ListHeading} from 'baseui/list';
@@ -16,7 +18,7 @@ const CopyrightText = styled(ParagraphSmall, ({$theme})=>({
   color: $theme.colors.contentTertiary
 }))
 
-const Index = () => {
+const Index = ({licenseInfo}) => {
   const [licenseIsOpen, setLicenseIsOpen] = React.useState(false);
   const db = useDB();
   const router = useRouter();
@@ -57,10 +59,23 @@ const Index = () => {
         autoFocus
         onClose={() => setLicenseIsOpen(false)}
       >
-        <div>drawer content</div>
+        <div>{Object.keys(licenseInfo).map(k=>(
+          <p key="k"><b><a href={licenseInfo[k].repository}>{k}</a></b>: {licenseInfo[k].publisher} {licenseInfo[k].licenses} </p>
+        ))}</div>
       </Drawer>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const pathOfLicense = join(process.cwd(), 'license_info.json');
+  const fileContents = fs.readFileSync(pathOfLicense, 'utf-8');
+
+  return ({
+    props: {
+      licenseInfo: JSON.parse(fileContents)
+    }
+  })
 }
 
 export default Index;
