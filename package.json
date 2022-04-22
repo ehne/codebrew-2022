@@ -21,11 +21,13 @@
   "homepage": "https://github.com/ehne/codebrew-2022#readme",
   "dependencies": {
     "baseui": "^11.0.1",
+    "formik": "^2.2.9",
     "next": "^12.1.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "styletron-engine-atomic": "^1.4.8",
-    "styletron-react": "^6.0.2"
+    "styletron-react": "^6.0.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "eslint": "8.13.0",
