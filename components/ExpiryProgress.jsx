@@ -2,7 +2,6 @@ import React from 'react';
 import {ProgressBar} from 'baseui/progress-bar';
 
 const determineBarColor = (percent, $theme) => {
-  console.log(percent)
   if (percent <= 0.6) {
     return $theme.colors.positive
   }

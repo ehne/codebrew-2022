@@ -22,7 +22,7 @@ const NavContainer = styled(ScreenContainer, ({$theme}) => ({
 
 const BottomNav = ({currentPage}) => {
   const router = useRouter()
-  console.log(router.pathname.split('/'))
+  //console.log(router.pathname.split('/'))
 
   /* TODO: fix this so it uses next/link rather than router pushes*/
   const menuButtons = [['', 'Home'], ['addProduct', 'Add product'], ['more', 'More']].map(i => (

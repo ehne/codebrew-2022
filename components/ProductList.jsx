@@ -19,7 +19,7 @@ const ProductList = () => {
           <ProductCard key={i.id} title={loadedData.productName} expiryDate={loadedData.expiryDate} addedDate={loadedData.addedDate}/>
         )
       })
-      console.log(renderedCards)
+      //console.log(renderedCards)
       setCards(renderedCards)
     })
   }, [db])
