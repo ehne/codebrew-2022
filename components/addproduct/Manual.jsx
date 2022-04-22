@@ -1,15 +1,15 @@
 import React from 'react';
 import {FormControl} from 'baseui/form-control';
 import {Input} from 'baseui/input';
-import {Combobox} from 'baseui/combobox';
 import {Button} from 'baseui/button';
 import {DatePicker} from 'baseui/datepicker';
-import {ChevronRight, Plus} from 'baseui/icon';
+import {ChevronRight} from 'baseui/icon';
 import {Checkbox} from 'baseui/checkbox';
 import { Formik, Form } from 'formik';
-import productSchema from '../../lib/productSchema';
 import { useDB } from 'react-pouchdb';
 import superjson from 'superjson';
+
+import productSchema from '../../lib/productSchema';
 
 
 const Manual = () => {
