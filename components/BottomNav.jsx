@@ -16,7 +16,8 @@ const NavContainer = styled(ScreenContainer, ({$theme}) => ({
   boxShadow: $theme.lighting.shadow400,
   borderTopColor: $theme.borders.border300.borderColor,
   borderTopWidth: $theme.borders.border300.borderWidth,
-  borderTopStyle: $theme.borders.border300.borderStyle
+  borderTopStyle: $theme.borders.border300.borderStyle,
+  overflowX: 'scroll',
 }))
 
 const BottomNav = ({currentPage}) => {
@@ -24,7 +25,7 @@ const BottomNav = ({currentPage}) => {
   console.log(router.pathname.split('/'))
 
   /* TODO: fix this so it uses next/link rather than router pushes*/
-  const menuButtons = [['', 'home'], ['addProduct', 'Add product'], ['more', 'More']].map(i => (
+  const menuButtons = [['', 'Home'], ['addProduct', 'Add product'], ['more', 'More']].map(i => (
     <Button
       onClick={()=>{router.push(`/${i[0]}`)}}
       key={i[0]}
