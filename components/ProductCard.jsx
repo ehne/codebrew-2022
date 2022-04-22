@@ -2,12 +2,13 @@ import React from 'react';
 import {Card, StyledBody} from 'baseui/card';
 import {Skeleton} from 'baseui/skeleton';
 import {styled} from 'baseui';
+import ExpiryProgress from './ExpiryProgress';
 
 const MarginBottomCard = styled(Card, ({$theme}) => ({
   marginBottom: $theme.sizing.scale500
 }))
 
-const ProductCard = ({skeleton=false, title}) => {
+const ProductCard = ({skeleton=false, title, expiryDate, addedDate}) => {
   if (skeleton) {
     return (
       <MarginBottomCard
@@ -21,14 +22,10 @@ const ProductCard = ({skeleton=false, title}) => {
       </MarginBottomCard>
     )
   }
+
   return (
    <MarginBottomCard title={title}>
-     <StyledBody>
-       Proin ut dui sed metus pharetra hend rerit vel non mi.
-       Nulla ornare faucibus ex, non facilisis nisl. Proin ut
-       dui sed metus pharetra hend rerit vel non mi. Nulla
-       ornare faucibus ex, non facilisis nisl.
-     </StyledBody>
+    <ExpiryProgress expiryDate={expiryDate} addedDate={addedDate} />
    </MarginBottomCard>
   );
 }
