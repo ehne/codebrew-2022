@@ -21,7 +21,6 @@ export default class MyApp extends App {
               </ScreenContainer>
             </Block>
           </PouchDB>
-          
           <BottomNav />
         </BaseProvider>
       </StyletronProvider>
