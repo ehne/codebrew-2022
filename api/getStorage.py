@@ -7,19 +7,25 @@ def storageMethods(url):
     URL = url.split("=")
     item = URL[1]
 
+    # reading the json file
     openJson = open('jsonfiletext.json')
     expiryDict = json.load(openJson)
-    expiryList = dict(expiryDict.items())
     VALIDMETHODS = []
 
-    for dictionary in expiryList:
+    # searching through the expiryDict for the required item
+    for dictionary in expiryDict:
         if dictionary == item:
-            for storageMethod in ["Ref - unopened","Ref - opened","Freezer","Shelf"]:
-                if expiryList[item][storageMethod] != "NA":
-                    VALIDMETHODS.append(storageMethod)
+            # checking if the method of storage is valid
+            for storageMethod in ["Ref - unopened","Freezer","Shelf"]:
+                if expiryDict[item][storageMethod] != "NA":
+                    # only need refridgerator not unopened and opened
+                    if storageMethod == "Ref - unopened":
+                        VALIDMETHODS.append("Refridgerator")
+                    else:
+                        VALIDMETHODS.append(storageMethod)
             return VALIDMETHODS
-
+    # will only return if item is not in csv file
     return "invalid item"
 
-
+# testing
 print(storageMethods("api/getStorage?q=Spinach"))
