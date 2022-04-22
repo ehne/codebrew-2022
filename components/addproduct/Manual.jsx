@@ -21,10 +21,8 @@ const Manual = () => {
       validationSchema={productSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          //console.log(values.expiryDate)
           // TODO: clean up ID system for db items
-          db.put({...superjson.serialize(values), '_id': JSON.stringify(values.expiryDate)})
-          
+          db.put({...superjson.serialize(values), '_id': JSON.stringify([...values.expiryDate, Math.random()])})
           setSubmitting(false);
         }, 400);
       }}
