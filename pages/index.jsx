@@ -5,8 +5,10 @@ import { Button } from 'baseui/button';
 import { useStyletron } from 'baseui';
 import Link from 'next/link';
 import { useDB } from 'react-pouchdb';
-import EmptyState from '../components/EmptyState';
 import { Block } from 'baseui/block';
+import EmptyState from '../components/EmptyState';
+import ProductList from '../components/ProductList';
+
 
 const Cards = () => {
   const [state, setState] = React.useState('loading')
@@ -15,18 +17,25 @@ const Cards = () => {
   React.useEffect(()=>{
     const isEmptyState = async () => {
       const allDocs = await db.allDocs();
+      console.log(allDocs)
       if (allDocs.total_rows === 0) {
         return true
       } else {
         return false
       }
     };
-    if (isEmptyState()) {
-      setState('emptyState')
-    } else {
-      setState('populatedState')
-    }
+    isEmptyState().then(res => {
+      if (res) {
+        setState('emptyState')
+      } else {
+        setState('populatedState')
+      }
+    }).catch(res => {setState('error')})
   },[db])
+
+  if (state === 'populatedState') {
+    return <ProductList />
+  }
 
   if (state === 'emptyState') {
     return (
