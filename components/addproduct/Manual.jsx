@@ -22,7 +22,7 @@ const Manual = () => {
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           // TODO: clean up ID system for db items
-          db.put({...superjson.serialize(values), '_id': JSON.stringify([...values.expiryDate, Math.random()])})
+          db.put({...superjson.serialize(values), '_id': JSON.stringify([values.expiryDate, Math.random()])})
           setSubmitting(false);
         }, 400);
       }}
@@ -37,7 +37,7 @@ const Manual = () => {
               name="productName"
               value={values.productName}
               onBlur={handleBlur}
-              onChange={e => {console.log(e); handleChange(e)}}
+              onChange={handleChange}
             />
           </FormControl>
           <FormControl
