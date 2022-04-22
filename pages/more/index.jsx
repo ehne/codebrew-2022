@@ -60,7 +60,7 @@ const Index = ({licenseInfo}) => {
         onClose={() => setLicenseIsOpen(false)}
       >
         <div>{Object.keys(licenseInfo).map(k=>(
-          <p key="k"><b><a href={licenseInfo[k].repository}>{k}</a></b>: {licenseInfo[k].publisher} {licenseInfo[k].licenses} </p>
+          <p  key="k"><b><a href={licenseInfo[k].repository}>{k}</a></b>: {licenseInfo[k].publisher} — <i>{licenseInfo[k].licenses}</i> </p>
         ))}</div>
       </Drawer>
     </>
