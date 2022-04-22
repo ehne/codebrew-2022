@@ -7,22 +7,24 @@ import {DatePicker} from 'baseui/datepicker';
 import {ChevronRight, Plus} from 'baseui/icon';
 import {Checkbox} from 'baseui/checkbox';
 import { Formik, Form } from 'formik';
+import productSchema from '../../lib/productSchema';
 
 const Manual = () => {
   return (
     <Formik
       initialValues={{'productName': '', 'expiryDate': [new Date()], 'isOpened': false}}
-      validate={(v)=>{}}
+      validationSchema={productSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           setSubmitting(false);
         }, 400);
       }}
     >
-      {({values, handleBlur, handleChange, isSubmitting}) => (
+      {({values, handleBlur, handleChange, isSubmitting, errors}) => (
         <Form>
           <FormControl
             label={() => "Product name"}
+            error={errors.productName}
           >
             <Input
               name="productName"
@@ -33,6 +35,7 @@ const Manual = () => {
           </FormControl>
           <FormControl
             label={() => "Expiry date"}
+            error={errors.expiryDate}
           >
             <DatePicker
               name="expiryDate"
