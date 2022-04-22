@@ -8,14 +8,23 @@ import {ChevronRight, Plus} from 'baseui/icon';
 import {Checkbox} from 'baseui/checkbox';
 import { Formik, Form } from 'formik';
 import productSchema from '../../lib/productSchema';
+import { useDB } from 'react-pouchdb';
+import superjson from 'superjson';
+
 
 const Manual = () => {
+  const db = useDB()
+
   return (
     <Formik
       initialValues={{'productName': '', 'expiryDate': [new Date()], 'isOpened': false}}
       validationSchema={productSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
+          //console.log(values.expiryDate)
+          // TODO: clean up ID system for db items
+          db.put({...superjson.serialize(values), '_id': JSON.stringify(values.expiryDate)})
+          
           setSubmitting(false);
         }, 400);
       }}

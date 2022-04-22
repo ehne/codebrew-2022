@@ -6,6 +6,7 @@ import {Block} from 'baseui/block';
 import {styletron} from '../lib/styletron';
 import BottomNav from '../components/BottomNav';
 import ScreenContainer from '../components/ScreenContainer';
+import { PouchDB } from 'react-pouchdb';
 
 export default class MyApp extends App {
   render() {
@@ -13,12 +14,14 @@ export default class MyApp extends App {
     return (
       <StyletronProvider value={styletron}>
         <BaseProvider theme={LightTheme}>
-          <Block backgroundColor="backgroundPrimary" color="primaryA" minHeight="100vh" >
-            <ScreenContainer>
-              <Component {...pageProps} />
-            </ScreenContainer>
-          </Block>
-         
+          <PouchDB name="local">
+            <Block backgroundColor="backgroundPrimary" color="primaryA" minHeight="100vh" >
+              <ScreenContainer>
+                <Component {...pageProps} />
+              </ScreenContainer>
+            </Block>
+          </PouchDB>
+          
           <BottomNav />
         </BaseProvider>
       </StyletronProvider>
