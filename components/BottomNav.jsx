@@ -5,6 +5,7 @@ import { Layer } from 'baseui/layer';
 import ScreenContainer from './ScreenContainer';
 import {ButtonGroup} from 'baseui/button-group';
 import {Button} from 'baseui/button';
+import { useRouter } from 'next/router';
 
 const NavContainer = styled(ScreenContainer, ({$theme}) => ({
   position: 'fixed',
@@ -18,7 +19,14 @@ const NavContainer = styled(ScreenContainer, ({$theme}) => ({
   borderTopStyle: $theme.borders.border300.borderStyle
 }))
 
-const BottomNav = () => {
+const BottomNav = ({currentPage}) => {
+  const router = useRouter()
+  router.pathname
+
+  /* TODO: fix this so it uses next/link rather than router pushes*/
+  const menuButtons = [['/', 'home'], ['/addProduct', 'Add product']].map(i => (
+    <Button onClick={()=>{router.push(i[0])}} key={i[0]} isSelected={router.pathname === i[0]}>{i[1]}</Button>
+  ))
   return (
     <Layer>
       <NavContainer>
@@ -27,9 +35,7 @@ const BottomNav = () => {
           shape="pill"
           mode="radio"
         >
-          <Button>One</Button>
-          <Button>Two</Button>
-          <Button>Three</Button>
+          {menuButtons}          
         </ButtonGroup>
       </NavContainer>
     </Layer>
