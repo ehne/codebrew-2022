@@ -20,7 +20,7 @@ def storageMethods(url):
                 if expiryDict[item][storageMethod] != "NA":
                     # only need refridgerator not unopened and opened
                     if storageMethod == "Ref - unopened":
-                        VALIDMETHODS.append("Refridgerator")
+                        VALIDMETHODS.append("Refrigerator")
                     else:
                         VALIDMETHODS.append(storageMethod)
             return VALIDMETHODS
