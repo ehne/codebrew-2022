@@ -1,6 +1,17 @@
 import React from 'react';
 import {ProgressBar} from 'baseui/progress-bar';
 
+const determineBarColor = (percent, $theme) => {
+  console.log(percent)
+  if (percent <= 0.6) {
+    return $theme.colors.positive
+  }
+  if (percent <= 0.85) {
+    return $theme.colors.warning
+  }
+  return $theme.colors.negative
+}
+
 const ExpiryProgress = ({expiryDate, addedDate}) => {
   const currentTime = (new Date()).getTime();
   const expiryDateTime = expiryDate.getTime();
@@ -23,7 +34,13 @@ const ExpiryProgress = ({expiryDate, addedDate}) => {
           style: ({}) => ({
             margin: '0px'
           })
-        } 
+        },
+        BarProgress: {
+          style: ({ $theme, $value }) => ({
+            backgroundColor: determineBarColor(percentageExpired, $theme),
+            transform: `translateX(${-$value}%)`
+          })
+        }
       }}
     />
   );
