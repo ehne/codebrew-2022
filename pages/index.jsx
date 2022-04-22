@@ -19,7 +19,6 @@ const Cards = () => {
   React.useEffect(()=>{
     const isEmptyState = async () => {
       const allDocs = await db.allDocs();
-      console.log(allDocs)
       if (allDocs.total_rows === 0) {
         return true
       } else {
