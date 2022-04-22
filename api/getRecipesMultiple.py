@@ -4,10 +4,11 @@ url = "tomato=huihijk"
 URL = url.split("=")
 #    ingredient = URL[1]
 ingredientNum = 1
-ingredient = "tomato"
+ingredients = ['tomato','chicken','salt','garlic','sugar']
+stringIngredients = (((str(ingredients).replace("'","")).replace("[","")).replace("]","")).replace(" ","")
 
 def recipeInfoFunction():
-    urlRequestGet = 'https://www.themealdb.com/api/json/v1/1/filter.php?i=' + ingredient
+    urlRequestGet = 'https://www.themealdb.com/api/json/v1/1/filter.php?i=' + stringIngredients
     r = rq.get(urlRequestGet)
     recipes = r.json()
     print(recipes)
