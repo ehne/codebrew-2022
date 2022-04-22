@@ -8,9 +8,9 @@ import {Checkbox} from 'baseui/checkbox';
 import { Formik, Form } from 'formik';
 import { useDB } from 'react-pouchdb';
 import superjson from 'superjson';
-
-import productSchema from '../../lib/productSchema';
 import { useRouter } from 'next/router';
+import {v4 as uuid} from 'uuid';
+import productSchema from '../../lib/productSchema';
 
 
 const Manual = () => {
@@ -25,7 +25,7 @@ const Manual = () => {
         setTimeout(() => {
           // TODO: clean up ID system for db items
           db.put({
-            '_id': `${values.expiryDate.getTime() + Math.random()}`,
+            '_id': `${values.expiryDate.getTime()}.${uuid()}`,
             ...superjson.serialize({
               addedDate: (new Date()),
               ...values,
