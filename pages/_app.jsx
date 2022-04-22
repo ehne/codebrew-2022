@@ -15,7 +15,7 @@ export default class MyApp extends App {
       <StyletronProvider value={styletron}>
         <BaseProvider theme={LightTheme}>
           <PouchDB name="local">
-            <Block backgroundColor="backgroundPrimary" color="primaryA" minHeight="100vh" >
+            <Block backgroundColor="backgroundPrimary" color="primaryA" minHeight="calc(100vh + 70px)" >
               <ScreenContainer>
                 <Component {...pageProps} />
               </ScreenContainer>
