@@ -4,10 +4,17 @@ import {Input} from 'baseui/input';
 import {Combobox} from 'baseui/combobox';
 import {Button} from 'baseui/button';
 import {DatePicker} from 'baseui/datepicker';
-import {ChevronRight, Plus} from 'baseui/icon';
+import {Alert, ChevronRight, Plus} from 'baseui/icon';
 import {Checkbox} from 'baseui/checkbox';
+import EmptyState from '../EmptyState';
 
 const Smart = () => {
+
+  return (
+    <EmptyState Icon={Alert} action={()=>{}} text="This input mode is under development" kind="warning"/>
+  )
+
+
   return (
     <>
     <FormControl

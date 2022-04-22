@@ -5,6 +5,7 @@ import { ParagraphMedium } from 'baseui/typography';
 
 const ContainerBox = styled(Block, ({$theme}) => ({
   backgroundColor: $theme.colors.backgroundTertiary,
+  color: $theme.colors.primaryA,
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -15,10 +16,29 @@ const ContainerBox = styled(Block, ({$theme}) => ({
   paddingRight: $theme.sizing.scale1400,
 }))
 
-const NonIdealState = ({Icon, text, action}) => {
+const kinds = {
+  positive: {
+    bg: 'backgroundLightPositive',
+    icon: 'positive'
+  },
+  warning: {
+    bg: 'backgroundLightWarning',
+    icon: 'warning'
+  },
+  negative: {
+    bg: 'backgroundLightNegative',
+    icon: 'negative'
+  },
+  firstTime: {
+    bg: 'backgroundTertiary',
+    icon: 'contentTertiary'
+  }
+}
+
+const EmptyState = ({Icon, text, action, kind="firstTime"}) => {
   return (
-    <ContainerBox>
-      <Icon size={64} color="contentTertiary"/>
+    <ContainerBox backgroundColor={kinds[kind].bg} >
+      <Icon size={64} color={kinds[kind].icon}/>
       <ParagraphMedium marginBottom="scale600">
         {text}
       </ParagraphMedium>
@@ -27,4 +47,4 @@ const NonIdealState = ({Icon, text, action}) => {
   );
 }
 
-export default NonIdealState;
+export default EmptyState;
