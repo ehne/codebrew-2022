@@ -21,11 +21,17 @@ const NavContainer = styled(ScreenContainer, ({$theme}) => ({
 
 const BottomNav = ({currentPage}) => {
   const router = useRouter()
-  router.pathname
+  console.log(router.pathname.split('/'))
 
   /* TODO: fix this so it uses next/link rather than router pushes*/
-  const menuButtons = [['/', 'home'], ['/addProduct', 'Add product']].map(i => (
-    <Button onClick={()=>{router.push(i[0])}} key={i[0]} isSelected={router.pathname === i[0]}>{i[1]}</Button>
+  const menuButtons = [['', 'home'], ['addProduct', 'Add product'], ['more', 'More']].map(i => (
+    <Button
+      onClick={()=>{router.push(`/${i[0]}`)}}
+      key={i[0]}
+      isSelected={router.pathname.split('/')[1] === i[0]}
+    >
+      {i[1]}
+    </Button>
   ))
   return (
     <Layer>
