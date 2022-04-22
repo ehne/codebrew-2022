@@ -134,3 +134,6 @@ dist
 local
 
 license_info.json
+
+sw.*
+workbox-*
