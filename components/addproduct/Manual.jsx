@@ -10,26 +10,29 @@ import { useDB } from 'react-pouchdb';
 import superjson from 'superjson';
 
 import productSchema from '../../lib/productSchema';
+import { useRouter } from 'next/router';
 
 
 const Manual = () => {
   const db = useDB()
+  const router = useRouter();
 
   return (
     <Formik
-      initialValues={{'productName': '', 'expiryDate': [new Date()], 'isOpened': false}}
+      initialValues={{'productName': '', 'expiryDate': new Date(), 'isOpened': false}}
       validationSchema={productSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           // TODO: clean up ID system for db items
           db.put({
-            '_id': JSON.stringify([values.expiryDate, Math.random()]),
+            '_id': `${values.expiryDate.getTime() + Math.random()}`,
             ...superjson.serialize({
               addedDate: (new Date()),
               ...values,
             }), 
           })
           setSubmitting(false);
+          router.push('/')
         }, 400);
       }}
     >
