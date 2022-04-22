@@ -47,7 +47,7 @@ const Index = ({licenseInfo}) => {
       >
         Delete Database
       </Button>}>
-        <ListItemLabel>Delete Dabase</ListItemLabel>
+        <ListItemLabel>Delete Database</ListItemLabel>
       </ListItem>
       <ListItem endEnhancer={() => <Button onClick={()=>setLicenseIsOpen(true)}><ChevronRight/></Button>}>
         <ListItemLabel>View License Information</ListItemLabel>
