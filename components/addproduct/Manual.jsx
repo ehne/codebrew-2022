@@ -1,6 +1,7 @@
 import React from 'react';
 import {FormControl} from 'baseui/form-control';
 import {Input} from 'baseui/input';
+import {Combobox} from 'baseui/combobox';
 import {Button} from 'baseui/button';
 import {DatePicker} from 'baseui/datepicker';
 import {ChevronRight} from 'baseui/icon';
@@ -12,14 +13,13 @@ import { useRouter } from 'next/router';
 import {v4 as uuid} from 'uuid';
 import productSchema from '../../lib/productSchema';
 
-
 const Manual = () => {
   const db = useDB()
   const router = useRouter();
 
   return (
     <Formik
-      initialValues={{'productName': '', 'expiryDate': new Date(), 'isOpened': false}}
+      initialValues={{'productName': '', 'expiryDate': new Date(), 'isOpened': false, 'storageLocation': 'Shelf'}}
       validationSchema={productSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -58,6 +58,24 @@ const Manual = () => {
               value={values.expiryDate}
               onChange={({date}) => handleChange({type: 'change', target: {type: 'text', value: date, name: 'expiryDate'}})}
               onBlur={handleBlur}
+            />
+          </FormControl>
+          <FormControl
+            label={() => "Storage location"}
+            error={errors.storageLocation}
+          >
+            <Combobox
+              name="storageLocation"
+              value={values.storageLocation}
+              onBlur={handleBlur}
+              onChange={value => handleChange({type: 'change', target: {type: 'text', value, name: 'storageLocation'}})}
+              options={[
+                { label: "Freezer", id: "Freezer" },
+                { label: "Refrigerator", id: "Refrigerator" },
+                { label: "Shelf", id: "Shelf" },
+              ]}
+              mapOptionToString={option => option.label}
+              autocomplete
             />
           </FormControl>
           <FormControl>
