@@ -22,7 +22,13 @@ const Manual = () => {
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           // TODO: clean up ID system for db items
-          db.put({...superjson.serialize(values), '_id': JSON.stringify([values.expiryDate, Math.random()])})
+          db.put({
+            '_id': JSON.stringify([values.expiryDate, Math.random()]),
+            ...superjson.serialize({
+              addedDate: (new Date()),
+              ...values,
+            }), 
+          })
           setSubmitting(false);
         }, 400);
       }}
