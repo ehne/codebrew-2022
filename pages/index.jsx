@@ -8,6 +8,8 @@ import { useDB } from 'react-pouchdb';
 import { Block } from 'baseui/block';
 import EmptyState from '../components/EmptyState';
 import ProductList from '../components/ProductList';
+import { ListHeading } from 'baseui/list';
+import { HeadingLarge } from 'baseui/typography';
 
 
 const Cards = () => {
@@ -91,7 +93,9 @@ const Cards = () => {
 const Index = () => {
   const [css, theme] = useStyletron();
   return (
-    <Cards />
+    <>
+      <Cards />
+    </>
   )
 
   

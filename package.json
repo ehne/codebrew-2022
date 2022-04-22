@@ -24,6 +24,7 @@
     "formik": "^2.2.9",
     "license-checker": "^25.0.1",
     "next": "^12.1.5",
+    "next-pwa": "^5.5.2",
     "pouchdb": "^7.3.0",
     "pouchdb-browser": "^7.3.0",
     "react": "^18.0.0",
