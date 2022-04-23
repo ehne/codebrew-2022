@@ -109,7 +109,7 @@ const Smart = () => {
   }
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} autoComplete="off" autoCorrect="off" autoCapitalize="off">
       <FormControl
         label={() => "Product name"}
         error={formik.errors.productName}
