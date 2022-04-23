@@ -1,6 +1,6 @@
 import React from 'react';
 import { Block } from 'baseui/block';
-import { Manual, Smart } from '../components/addproduct';
+import { Camera, Manual, Smart } from '../components/addproduct';
 import {Tabs, Tab} from 'baseui/tabs-motion';
 import { useRouter } from 'next/router';
 
@@ -24,8 +24,7 @@ const Addproduct = () => {
      >
        <Tab title="Manual entry"><Manual /></Tab>
        <Tab title="Smart entry"><Smart /></Tab>
-       {/*<Tab title="Camera entry">Content 2</Tab>
-       <Tab title="List entry">Content 3</Tab> */}
+       <Tab title="Camera entry"><Camera /></Tab>
      </Tabs>
       
     </Block>
