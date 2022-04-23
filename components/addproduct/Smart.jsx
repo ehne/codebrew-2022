@@ -157,6 +157,19 @@ const Smart = () => {
           autocomplete
         />
       </FormControl>
+      <FormControl>
+        <Checkbox
+          name="isOpened"
+          checked={formik.values.isOpened}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          disabled={formik.isSubmitting || state === 'showSuggestions'}
+          //checkmarkType="toggle"
+          //labelPlacement="left"
+        >
+          This product is opened
+        </Checkbox>
+      </FormControl>
       <Button
         endEnhancer={ChevronRight}
         type="submit"
