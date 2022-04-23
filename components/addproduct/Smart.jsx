@@ -14,9 +14,12 @@ import productSchema from '../../lib/productSchema';
 import superjson from 'superjson';
 import { Block } from 'baseui/block';
 import { useDB } from 'react-pouchdb';
+import {v4 as uuid} from 'uuid';
+import { useRouter } from 'next/router';
 
 const Smart = () => {
   const db = useDB();
+  const router = useRouter();
   const { productList, isLoading, isError } = useProducts();
   const [state, setState] = React.useState('beforeInput');
 
@@ -54,16 +57,29 @@ const Smart = () => {
         
         const queries = `item=${encodeURIComponent(values.productName)}&storageMethod=${encodeURIComponent(values.storageLocation)}&opened=${values.isOpened}&time=${yyyy}-${mm}-${dd}`
         console.log(queries)
-        fetch(`/api/getExpiry2?${queries}`).then(res => res.json()).then(data=>{
-          setState('showSuggestions')
-          formik.handleChange({ type: 'change', target: { type: 'text', value: (new Date(data.expiry)), name: 'expiryDate' } })
-        }).catch(e => {
-          setState('error')
-          console.error(e)
-        }).finally(_ => {
-          setSubmitting(false);
-        })
-        
+        fetch(`/api/getExpiry2?${queries}`)
+          .then(res => res.json())
+          .then(data => {
+            if(data.type === 'error') {
+              throw "BadStorage";
+            }
+            return data
+          })
+          .then(data=>{
+            console.log(data)
+            setState('showSuggestions')
+            formik.handleChange({ type: 'change', target: { type: 'text', value: (new Date(data.expiry)), name: 'expiryDate' } })
+          }).catch(e => {
+            if (e === 'BadStorage') {
+              alert('Bad storage type for food item. Please select a different method')
+              setState('beforeInput')
+            } else {
+              setState('error')
+            }
+            console.error(e)
+          }).finally(_ => {
+            setSubmitting(false);
+          })
       }
     },
   });
