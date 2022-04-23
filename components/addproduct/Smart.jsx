@@ -43,13 +43,15 @@ const Smart = () => {
 
   // used for the search functionality of the product list combobox
   const filteredProductList = React.useMemo(() => {
+    if (isLoading) return productList;
+
     return productList.filter(option => {
       const optionAsString = option.label;
       return optionAsString
         .toLowerCase()
         .includes(formik.values.productName.toLowerCase());
     });
-  }, [productList, formik.values.productName]);
+  }, [productList, formik.values.productName, isLoading]);
 
   if (isError) {
     return (
