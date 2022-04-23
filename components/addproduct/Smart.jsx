@@ -174,7 +174,7 @@ const Smart = () => {
         endEnhancer={ChevronRight}
         type="submit"
         disabled={formik.isSubmitting || state === 'showSuggestions'}
-        isLoading={formik.isSubmitting}
+        isLoading={formik.isSubmitting && state !== 'showSuggestions'}
       >
         Continue
       </Button>
