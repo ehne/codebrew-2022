@@ -16,7 +16,7 @@ import { Block } from 'baseui/block';
 
 const Smart = () => {
   const { productList, isLoading, isError } = useProducts();
-  const [state, setState] = React.useState('beforeInput')
+  const [state, setState] = React.useState('beforeInput');
 
   const formik = useFormik({
     initialValues: { 
@@ -52,10 +52,16 @@ const Smart = () => {
         
         const queries = `item=${encodeURIComponent(values.productName)}&storageMethod=${encodeURIComponent(values.storageLocation)}&opened=${values.isOpened}&time=${yyyy}-${mm}-${dd}`
         console.log(queries)
-        //fetch(`/api/getExpiry2?${queries}`)
-
-        setSubmitting(false);
-        setState('showSuggestions')
+        fetch(`/api/getExpiry2?${queries}`).then(res => res.json()).then(data=>{
+          setState('showSuggestions')
+          formik.handleChange({ type: 'change', target: { type: 'text', value: (new Date(data.expiry)), name: 'expiryDate' } })
+        }).catch(e => {
+          setState('error')
+          console.error(e)
+        }).finally(_ => {
+          setSubmitting(false);
+        })
+        
       }
     },
   });
