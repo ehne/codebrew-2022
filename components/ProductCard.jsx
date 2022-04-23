@@ -1,14 +1,16 @@
 import React from 'react';
-import {Card, StyledBody} from 'baseui/card';
+import {Card, StyledAction, StyledBody} from 'baseui/card';
 import {Skeleton} from 'baseui/skeleton';
 import {styled} from 'baseui';
 import ExpiryProgress from './ExpiryProgress';
+import {Tag} from 'baseui/tag';
+
 
 const MarginBottomCard = styled(Card, ({$theme}) => ({
   marginBottom: $theme.sizing.scale500
 }))
 
-const ProductCard = ({skeleton=false, title, expiryDate, addedDate}) => {
+const ProductCard = ({skeleton=false, productName, expiryDate, addedDate, storageLocation, isOpened}) => {
   if (skeleton) {
     return (
       <MarginBottomCard
@@ -24,9 +26,17 @@ const ProductCard = ({skeleton=false, title, expiryDate, addedDate}) => {
   }
 
   return (
-   <MarginBottomCard title={title}>
-    <ExpiryProgress expiryDate={expiryDate} addedDate={addedDate} />
-   </MarginBottomCard>
+    <MarginBottomCard title={productName}>
+      <StyledBody>
+        <Tag overrides={{
+          Root: {style: ({}) => ({marginLeft: '0px'})}
+        }} closeable={false}>Stored in: Fridge</Tag>
+        <Tag closeable={false} kind={isOpened ? 'negative' : 'primary'}>{isOpened ? 'opened' : 'unopened'}</Tag>
+      </StyledBody>
+      <StyledAction>
+        <ExpiryProgress expiryDate={expiryDate} addedDate={addedDate} />
+      </StyledAction>
+    </MarginBottomCard>
   );
 }
 

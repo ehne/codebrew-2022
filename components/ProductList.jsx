@@ -16,7 +16,7 @@ const ProductList = () => {
         const loadedData = superjson.deserialize(i.doc)
         console.log(loadedData)
         return (
-          <ProductCard key={i.id} title={loadedData.productName} expiryDate={loadedData.expiryDate} addedDate={loadedData.addedDate}/>
+          <ProductCard key={i.id} {...loadedData}/>
         )
       })
       //console.log(renderedCards)
