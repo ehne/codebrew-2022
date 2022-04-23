@@ -10,6 +10,7 @@ import EmptyState from '../components/EmptyState';
 import ProductList from '../components/ProductList';
 import { ListHeading } from 'baseui/list';
 import { HeadingLarge } from 'baseui/typography';
+import ErrorState from '../components/ErrorState';
 
 
 const Cards = () => {
@@ -68,22 +69,7 @@ const Cards = () => {
   }
 
   return (
-    <EmptyState
-      Icon={Alert}
-      text="Something went wrong"
-      kind="negative"
-      action={(
-          <Button 
-            size="compact"
-            shape="pill"
-            $as="a"
-            href="/"
-            //colors={{backgroundColor: theme.colors.accent, color: theme.colors.contentOnColor}}
-          >
-            Try reloading the page
-          </Button>
-      )} 
-    />
+    <ErrorState href="/" />
   )
   
 }
