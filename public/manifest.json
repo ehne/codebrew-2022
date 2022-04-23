@@ -23,5 +23,19 @@
   "background_color": "#FFFFFF",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "shortcuts": [
+    {
+      "name": "Add Product",
+      "description": "Provides quick access to adding a product",
+      "url": "/addProduct",
+      "icons": [
+        {
+          "src": "/icons/addProductShortcut.svg",
+          "type": "image/svg+xml",
+          "purpose": "any"
+        }
+      ]
+    }
+  ]
 }
