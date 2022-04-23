@@ -1,15 +1,11 @@
 import React from 'react';
-import {Spinner} from 'baseui/spinner';
-import { Alert, Plus } from 'baseui/icon';
+import { Plus } from 'baseui/icon';
 import { Button } from 'baseui/button';
 import { useStyletron } from 'baseui';
 import Link from 'next/link';
 import { useDB } from 'react-pouchdb';
-import { Block } from 'baseui/block';
 import EmptyState from '../components/EmptyState';
 import ProductList from '../components/ProductList';
-import { ListHeading } from 'baseui/list';
-import { HeadingLarge } from 'baseui/typography';
 import ErrorState from '../components/ErrorState';
 import LoadingSpinner from '../components/LoadingSpinner';
 
