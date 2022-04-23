@@ -25,7 +25,7 @@ const BottomNav = ({currentPage}) => {
   //console.log(router.pathname.split('/'))
 
   /* TODO: fix this so it uses next/link rather than router pushes*/
-  const menuButtons = [['', 'Home'], ['addProduct', 'Add product'], ['more', 'More']].map(i => (
+  const menuButtons = [['', 'Home'], ['addProduct', 'Add product'], ['recipes', 'Recipes'], ['more', 'More']].map(i => (
     <Button
       onClick={()=>{router.push(`/${i[0]}`)}}
       key={i[0]}
