@@ -13,8 +13,10 @@ import LoadingSpinner from '../LoadingSpinner';
 import productSchema from '../../lib/productSchema';
 import superjson from 'superjson';
 import { Block } from 'baseui/block';
+import { useDB } from 'react-pouchdb';
 
 const Smart = () => {
+  const db = useDB();
   const { productList, isLoading, isError } = useProducts();
   const [state, setState] = React.useState('beforeInput');
 
