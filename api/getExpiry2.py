@@ -73,11 +73,11 @@ class handler(BaseHTTPRequestHandler):
                 # creating an expiration date
                 if longevity == "NA":
                     # error in storage method
-                    message = {"product": item, "time": time, "storage method": storageMethod, "expiry": "error in storage", "category": category, "opened": opened}
+                    message = {"type": "error", "product": item, "time": time, "storage method": storageMethod, "expiry": "error in storage", "category": category, "opened": opened}
                 else:
                     # valid storage method
                     expiryDate = datePurchased + timedelta(days = int(longevity))
                     expiryDate = str(expiryDate.date())
-                    message = {"product": item, "time": time, "storage method": storageMethod, "expiry": expiryDate, "category": category, "opened": opened}
+                    message = {"type": "success", "product": item, "time": time, "storage method": storageMethod, "expiry": expiryDate, "category": category, "opened": opened}
         
         return self.wfile.write(json.dumps(message).encode(encoding='utf-8'))
