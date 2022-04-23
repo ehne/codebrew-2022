@@ -11,6 +11,7 @@ import ProductList from '../components/ProductList';
 import { ListHeading } from 'baseui/list';
 import { HeadingLarge } from 'baseui/typography';
 import ErrorState from '../components/ErrorState';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 
 const Cards = () => {
@@ -62,9 +63,7 @@ const Cards = () => {
 
   if (state === 'loading') {
     return (
-      <Block display="flex" alignItems="center" justifyContent="center" padding="scale3200">
-        <Spinner />
-      </Block>
+      <LoadingSpinner />
     )
   }
 
