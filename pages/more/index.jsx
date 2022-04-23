@@ -45,9 +45,9 @@ const Index = ({ licenseInfo, buildID }) => {
           }
         }}
       >
-        Delete Database
+        Delete Data
       </Button>}>
-        <ListItemLabel>Delete Database</ListItemLabel>
+        <ListItemLabel description="Warning: This action cannot be undone.">Delete all local data</ListItemLabel>
       </ListItem>
       <ListItem endEnhancer={() => <Button onClick={() => setLicenseIsOpen(true)}><ChevronRight /></Button>}>
         <ListItemLabel>View License Information</ListItemLabel>
