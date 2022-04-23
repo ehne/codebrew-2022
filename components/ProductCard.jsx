@@ -2,15 +2,36 @@ import React from 'react';
 import {Card, StyledAction, StyledBody} from 'baseui/card';
 import {Skeleton} from 'baseui/skeleton';
 import {styled} from 'baseui';
+import { Button } from 'baseui/button';
 import ExpiryProgress from './ExpiryProgress';
 import {Tag} from 'baseui/tag';
+import { Delete } from 'baseui/icon';
+import { useDB } from 'react-pouchdb';
+import { useRouter } from 'next/router';
 
 
 const MarginBottomCard = styled(Card, ({$theme}) => ({
-  marginBottom: $theme.sizing.scale500
+  marginBottom: $theme.sizing.scale500,
+  position: 'relative'
 }))
 
-const ProductCard = ({skeleton=false, productName, expiryDate, addedDate, storageLocation, isOpened}) => {
+const DeleteButton = styled(Button, ({$theme}) => ({
+  position: 'absolute',
+  top: $theme.sizing.scale200,
+  right: $theme.sizing.scale200,
+}))
+
+const ProductCard = ({skeleton=false, productName, expiryDate, addedDate, storageLocation, isOpened, rev, id}) => {
+  const db = useDB();
+  const router = useRouter();
+
+  const handleDelete = () => {
+    if(confirm('Are you sure you want to delete this item?')) {
+      db.remove(id, rev);
+      router.reload();
+    }
+  }
+
   if (skeleton) {
     return (
       <MarginBottomCard
@@ -27,11 +48,31 @@ const ProductCard = ({skeleton=false, productName, expiryDate, addedDate, storag
 
   return (
     <MarginBottomCard title={productName}>
+      <DeleteButton onClick={handleDelete} size="mini" kind="secondary" shape="circle"><Delete /></DeleteButton>
       <StyledBody>
         <Tag overrides={{
-          Root: {style: ({}) => ({marginLeft: '0px'})}
-        }} closeable={false}>Stored in: Fridge</Tag>
-        <Tag closeable={false} kind={isOpened ? 'negative' : 'primary'}>{isOpened ? 'opened' : 'unopened'}</Tag>
+          Root: {style: ({}) => ({marginLeft: '0px'})},
+          Text: {
+            style: ({ $theme }) => ({
+              textOverflow: "nowrap",
+              maxWidth: "100%"
+            })
+          }
+        }} closeable={false}>Stored in: {storageLocation}</Tag>
+        <Tag 
+          closeable={false} 
+          kind={isOpened ? 'negative' : 'primary'}
+          overrides={{
+            Text: {
+              style: ({ $theme }) => ({
+                textOverflow: "nowrap",
+                maxWidth: "100%"
+              })
+            }
+          }}
+        >
+          {isOpened ? 'opened' : 'unopened'}
+        </Tag>
       </StyledBody>
       <StyledAction>
         <ExpiryProgress expiryDate={expiryDate} addedDate={addedDate} />

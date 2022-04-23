@@ -14,9 +14,9 @@ const ProductList = () => {
       //console.log(res)
       const renderedCards = res.rows.map(i => {
         const loadedData = superjson.deserialize(i.doc)
-        console.log(loadedData)
+        console.log(i)
         return (
-          <ProductCard key={i.id} {...loadedData}/>
+          <ProductCard key={i.id} rev={i.doc._rev} id={i.doc._id} {...loadedData}/>
         )
       })
       //console.log(renderedCards)
