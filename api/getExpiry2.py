@@ -26,7 +26,7 @@ class handler(BaseHTTPRequestHandler):
         s = self.path
         dic = dict(parse.parse_qsl(parse.urlsplit(s).query))
         self.send_response(200)
-
+        print(dic)
         # converting queries to already defined variable names cause its easier
         item = dic["item"]
         time = dic["time"]
@@ -34,9 +34,9 @@ class handler(BaseHTTPRequestHandler):
         opened = dic["opened"]
 
         # using the storage names as per the file
-        if storageMethod == "Refridgerator" and opened == False:
+        if storageMethod == "Refrigerator" and opened == 'false':
             header = "Ref - unopened"
-        elif storageMethod == "Refridgerator" and opened == True:
+        elif storageMethod == "Refrigerator" and opened == 'true':
             header = "Ref - opened"
         elif storageMethod == "Freezer":
             header = "Freezer"
@@ -46,7 +46,7 @@ class handler(BaseHTTPRequestHandler):
             print("you are stupid")
         
 
-        convertToJSON("BestBefore.csv")
+        #convertToJSON("BestBefore.csv")
 
         #code for using JSON
         openJson = open('api/jsonfiletext.json')
