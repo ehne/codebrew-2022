@@ -10,12 +10,12 @@ import { useFormik, Form } from 'formik';
 import useProducts from '../../lib/useProducts';
 import ErrorState from '../ErrorState';
 import LoadingSpinner from '../LoadingSpinner';
-import productSchema from '../../lib/productSchema';
 import superjson from 'superjson';
 import { Block } from 'baseui/block';
 import { useDB } from 'react-pouchdb';
 import {v4 as uuid} from 'uuid';
 import { useRouter } from 'next/router';
+import smartProductSchema from '../../lib/smartProductSchema';
 
 const Smart = () => {
   const db = useDB();
@@ -31,7 +31,7 @@ const Smart = () => {
       'storageLocation': 'Shelf', 
       'addedDate': new Date() 
     },
-    validationSchema: productSchema,
+    validationSchema: smartProductSchema(productList),
     onSubmit: (values, { setSubmitting }) => {
       // if we're already showing suggestions, we can just then take 
       // the submit handler to update the db
