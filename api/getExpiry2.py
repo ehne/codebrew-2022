@@ -46,7 +46,7 @@ class handler(BaseHTTPRequestHandler):
             print("you are stupid")
         
 
-        #convertToJSON("BestBefore.csv")
+        convertToJSON("BestBefore.csv")
 
         #code for using JSON
         openJson = open('api/jsonfiletext.json')

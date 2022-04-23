@@ -1,118 +1,277 @@
-Category,Product,Ref - unopened,Ref - opened,Freezer,Shelf
-Dairy,Butter,30,NA,180,NA
-Dairy,Buttermilk,7,NA,90,NA
-Dairy,"Cheese, hard (such as cheddar, swiss, block parmesan)",180,21,90,NA
-Dairy,"Parmesan, shredded",30,NA,90,NA
-Dairy,"Shredded cheddar, mozzarella, etc.",30,NA,90,NA
-Dairy,"Cheese, processed slices",30,NA,NA,NA
-Dairy,"Cheese, soft (such as Brie, Bel Paese)",7,NA,180,NA
-Dairy,"Cottage cheese, ricotta",7,NA,NA,NA
-Dairy,Cream cheese,14,NA,NA,NA
-Dairy,"Cream, whipping, ultrapasteurized",30,NA,NA,NA
-Dairy,"Whipped, sweetened",1,NA,30,NA
-Dairy,"Aerosol can, real whipped cream",21,NA,NA,NA
-Dairy,"Aerosol can, nondairy topping",90,NA,NA,NA
-Dairy,"Cream, half-and-half",3,NA,120,NA
-Dairy,"Dips, sour cream based",14,NA,NA,NA
-Dairy,"Egg substitutes, liquid",10,3,NA,NA
-Dairy,"Eggnog, commercial",21,NA,180,NA
-Dairy,"Eggs, in shell",2,NA,NA,NA
-Dairy,Margarine,180,NA,365,NA
-Dairy,"Milk, plain or flavored",7,NA,90,NA
-Dairy,Sour cream,7,NA,NA,NA
-Dairy,Yogurt,7,NA,30,NA
-Soy,"Soy or rice beverage, refrigerated",7,NA,NA,NA
-Soy,Tofu,7,NA,150,NA
-Soy,Miso,90,NA,NA,NA
-Fish,"Lean fish (cod, flounder, haddock, halibut, sole, etc.)",1,NA,180,NA
-Fish,"Lean fish (pollock, ocean perch, rockfish, sea trout)",1,NA,120,NA
-Fish,"Fatty fish (bluefish, mackerel, mullet, salmon, tuna, etc.)",1,NA,60,NA
-Fish,"Caviar, fresh, in jar",7,2,NA,NA
-Fish,"Cooked fish, all",3,NA,30,NA
-Fish,Surimi seafood,3,NA,270,NA
-Fish,Smoked herring,3,NA,60,NA
-Fish,Smoked salmon,5,NA,60,NA
-Shellfish,"Shrimp, scallops, crayfish, squid",1,NA,90,NA
-Shellfish,"Shucked clams, mussels and oysters",1,NA,90,NA
-Shellfish,"Crab meat, fresh",1,NA,120,NA
-Shellfish,"Crab meat, pasteurized",180,3,120,NA
-Shellfish,"Crab legs, king, dungeness, snow",5,NA,270,NA
-Shellfish,"Live clams, mussels, crab and oysters",1,NA,60,NA
-Shellfish,Live lobsters,1,NA,60,NA
-Shellfish,Lobster tails,1,NA,180,NA
-Shellfish,"Cooked shellfish, all",3,NA,90,NA
-Meat - fresh,"Beef, lamb, pork or veal chops, steaks,roasts",3,NA,120,NA
-Meat - fresh,Ground meat,1,NA,90,NA
-Meat - fresh,"Variety meats (liver, tongue, chitterlings, etc.)",1,NA,90,NA
-Meat - fresh,Cooked meats (after home cooking),3,NA,60,NA
-Meat - processed,Bacon,7,NA,30,NA
-Meat - processed,"Corned beef, in pouch with pickling juices",5,NA,30,NA
-Meat - processed,"Ham, canned (""keep refrigerated"" label)",180,NA,NA,NA
-Meat - processed,"Ham, fully cooked, whole",7,NA,30,NA
-Meat - processed,"Ham, fully cooked, slices or half",3,NA,30,NA
-Meat - processed,"Ham, cook before eating",7,NA,30,NA
+Dairy,Butter,30,30,180,NA
+Dairy,Buttermilk,7,7,90,NA
+Dairy,Cheese block,180,21,90,NA
+Dairy,Cheddar,180,21,90,NA
+Dairy,Swiss,180,21,90,NA
+Dairy,Parmesean (block),180,21,90,NA
+Dairy,Cheese (shredded),30,30,90,NA
+Dairy,Mozzarella (shredded),30,30,90,NA
+Dairy,Shredded cheese,30,30,90,NA
+Dairy,Parmesan (shredded),30,30,90,NA
+Dairy,Cheese (sliced),30,30,NA,NA
+Dairy,Cheese (soft),7,7,180,NA
+Dairy,Brie,7,7,180,NA
+Dairy,Camenbert,7,7,180,NA
+Dairy,Cottage cheese,7,7,NA,NA
+Dairy,Ricotta,7,7,NA,NA
+Dairy,Cream cheese,14,14,NA,NA
+Dairy,Cream (whipping),30,30,NA,NA
+Dairy,Whipped cream (spray can),1,1,30,NA
+Dairy,Whipped cream (tub),21,21,NA,NA
+Dairy,Dip,14,14,NA,NA
+Dairy,Egg substitute (liquid),10,10,NA,NA
+Dairy,Eggnog,21,21,180,NA
+Dairy,Eggs,2,2,NA,NA
+Dairy,Margarine,180,180,365,NA
+Dairy,Milk,7,7,90,NA
+Dairy,Milk (flavoured),7,7,90,NA
+Dairy,Chocolate milk,7,7,90,NA
+Dairy,Sour cream,7,7,NA,NA
+Dairy,Yogurt,7,7,30,NA
+Soy,Soy milk,7,7,NA,NA
+Soy,Tofu,7,7,150,NA
+Soy,Miso,90,90,NA,NA
+Fish,"Fish (Lean - cod, flounder, haddock, pollock, perch, trout, etc)",1,1,120,NA
+Fish,"Fish (Fatty - bluefish, mackerel, mullet, salmon, tuna, etc.)",1,1,60,NA
+Fish,Caviar,7,2,NA,NA
+Fish,Fish (cooked),3,3,30,NA
+Fish,Surimi seafood,3,3,270,NA
+Fish,Smoked herring,3,3,60,NA
+Fish,Smoked salmon,5,5,60,NA
+Shellfish,Shrimp,1,1,90,NA
+Shellfish,Squid,1,1,90,NA
+Shellfish,Crayfish,1,1,90,NA
+Shellfish,Scallops,1,1,90,NA
+Shellfish,Oysters,1,1,90,NA
+Shellfish,Mussels,1,1,90,NA
+Shellfish,Clams (shucked) ,1,1,90,NA
+Shellfish,Crab (fresh),1,1,120,NA
+Shellfish,Crab (pasteurised meat),180,3,120,NA
+Shellfish,Clams (live),1,1,60,NA
+Shellfish,Mussels,1,1,60,NA
+Shellfish,Crab,1,1,60,NA
+Shellfish,Oysters,1,1,60,NA
+Shellfish,Lobster (fresh),1,1,60,NA
+Shellfish,Lobster tail,1,1,180,NA
+Shellfish,Shellfish (cooked),3,3,90,NA
+Meat - fresh,Beef (fresh),3,3,120,NA
+Meat - fresh,Pork (fresh),3,3,120,NA
+Meat - fresh,Lamb (fresh),3,3,120,NA
+Meat - fresh,Lamb chops,3,3,120,NA
+Meat - fresh,Pork chops,3,3,120,NA
+Meat - fresh,Steak,3,3,120,NA
+Meat - fresh,Roasting meat (fresh),3,3,120,NA
+Meat - fresh,Ground meat,1,1,90,NA
+Meat - fresh,Mince meat,1,1,90,NA
+Meat - processed,Bacon,7,7,30,NA
+Meat - processed,Corned beef,5,5,30,NA
+Meat - processed,"Ham (whole, cooked)",7,7,30,NA
+Meat - processed,"Ham (sliced, cooked)",3,3,30,NA
 Meat - processed,Hot dogs,14,7,30,NA
-Meat - processed,"Lunch meats, sealed in package",14,3,30,NA
-Meat - processed,"Sausage, raw, bulk type",7,NA,30,NA
-Meat - processed,"Sausage, smoked links, patties",7,NA,30,NA
-Meat - processed,"Sausage, hard, dry (pepperoni), sliced",14,NA,30,NA
-Poultry- fresh,"Chicken or turkey, whole",1,NA,365,NA
-Poultry- fresh,"Chicken or turkey, parts",1,NA,270,NA
-Poultry- fresh,"Duckling or goose, whole",1,NA,180,NA
-Poultry- fresh,Giblets,1,NA,270,NA
-Poultry - cooked/processed,,NA,NA,,NA
-Poultry - cooked/processed,"Chicken nuggets, patties",1,NA,30,NA
-Poultry - cooked/processed,Cooked poultry dishes,3,NA,120,NA
-Poultry - cooked/processed,Fried chicken,3,NA,120,NA
-Poultry - cooked/processed,Ground turkey or chicken,1,NA,90,NA
-Poultry - cooked/processed,Small goods,14,3,30,NA
-Poultry - cooked/processed,Pieces covered with broth or gravy,1,NA,180,NA
-Poultry - cooked/processed,Rotisserie chicken,3,NA,120,NA
-FRUITS,Apples,NA,21,NA,1
-FRUITS,Apricots,NA,14,NA,Until ripe
-FRUITS,Avocados,NA,3,NA,Until ripe
-FRUITS,Bananas,NA,2,30,Until ripe
-FRUITS,"Berries, cherries",NA,1,120,NA
-FRUITS,Citrus Fruit,NA,7,NA,10
-FRUITS,"Coconuts, fresh",NA,14,NA,7
-FRUITS,"Coconut, shredded",NA,NA,180,NA
-FRUITS,Grapes,NA,7,30,1
-FRUITS,Kiwi Fruit,NA,3,NA,Until ripe
-FRUITS,Melons,NA,3,30,1
-FRUITS,"Papaya, mango",NA,7,NA,3
-FRUITS,"Peaches, nectarines",NA,3,"Sliced, lemon juice & sugar, 2 months",Until ripe
-FRUITS,"Pears, Plums",NA,3,NA,3
-VEGETABLES,"Artichokes, whole",NA,7,NA,1
-VEGETABLES,Asparagus,NA,3,240,NA
-VEGETABLES,"Beans, green or wax",NA,3,240,NA
-VEGETABLES,Beets,NA,7,180,1
-VEGETABLES,Bok choy,NA,2,300,NA
-VEGETABLES,"Broccoli, raab, rapini",NA,3,300,NA
-VEGETABLES,Brussels sprouts,NA,3,300,NA
-VEGETABLES,Cauliflower,NA,3,300,NA
-VEGETABLES,Cabbage,NA,7,300,NA
-VEGETABLES,"Carrots, parsnips",NA,21,300,NA
-VEGETABLES,Celery,NA,7,300,NA
-VEGETABLES,Corn on the cob,NA,1,240,NA
-VEGETABLES,Cucumbers,NA,4,NA,NA
-VEGETABLES,Eggplant,NA,3,180,1
-VEGETABLES,Garlic,NA,7,30,30
-VEGETABLES,Ginger Root,NA,7,30,1
-VEGETABLES,Greens,NA,1,300,NA
-VEGETABLES,"Herbs, fresh",NA,7,30,NA
-VEGETABLES,Leeks,NA,7,300,NA
-VEGETABLES,"Lettuce, iceberg",NA,7,NA,NA
-VEGETABLES,"Lettuce, leaf",NA,3,NA,NA
-VEGETABLES,Mushrooms,NA,2,300,NA
-VEGETABLES,Okra,NA,2,300,NA
-VEGETABLES,Onions,NA,60,300,14
-VEGETABLES,Spring onion,NA,7,300,NA
-VEGETABLES,"Parsley, cilantro",NA,7,30,NA
-VEGETABLES,"Peppers, bell or chile",NA,4,180,NA
-VEGETABLES,Potatoes,NA,7,300,30
-VEGETABLES,Radishes,NA,10,NA,NA
-VEGETABLES,Rutabagas,NA,14,240,7
-VEGETABLES,Spinach,NA,1,300,NA
-VEGETABLES,Squash,NA,4,300,NA
-VEGETABLES,Turnips,NA,14,240,NA
-VEGETABLES,Tomatoes,NA,2,60,Ripe
+Meat - processed,Lunch meats (packaged),14,3,30,NA
+Meat - processed,Sliced meats (packed),14,3,30,NA
+Meat - processed,Small goods (packaged),14,3,30,NA
+Meat - processed,Sausage (raw),7,7,30,NA
+Meat - processed,Sausage (smoked),10,10,30,NA
+Meat - processed,Patties,7,7,30,NA
+Meat - processed,Sausage (dry),14,14,30,NA
+Poultry- fresh,Chicken (whole),1,1,365,NA
+Poultry- fresh,Turkey (whole),1,1,365,NA
+Poultry- fresh,Chicken (parts),1,1,270,NA
+Poultry- fresh,Turkey (parts),1,1,270,NA
+Poultry- fresh,Giblets,1,1,270,NA
+Poultry - cooked/processed,Chicken nuggets,1,1,30,NA
+Poultry - cooked/processed,Chicken patties,1,1,30,NA
+Poultry - cooked/processed,Fried chicken,3,3,120,NA
+Poultry - cooked/processed,Chicken mince,1,1,90,NA
+Poultry - cooked/processed,Sliced chicken,14,3,30,NA
+Poultry - cooked/processed,Roast chicken,3,3,120,NA
+Fruit,Apples,NA,21,NA,1
+Fruit,Apricots,NA,14,NA,14
+Fruit,Avocados,NA,3,NA,3
+Fruit,Bananas,NA,2,30,2
+Fruit,Berries,NA,1,120,NA
+Fruit,cherries,NA,1,120,NA
+Fruit,Strawberries,NA,1,120,NA
+Fruit,Citrus Fruit,NA,7,NA,10
+Fruit,"Coconuts, fresh",NA,14,NA,7
+Fruit,"Coconut, shredded",NA,NA,180,NA
+Fruit,Grapes,NA,7,30,1
+Fruit,Kiwi Fruit,NA,3,NA,Until ripe
+Fruit,Melons,NA,3,30,1
+Fruit,Watermelon,NA,3,30,1
+Fruit,Rockmelon,NA,3,30,1
+Fruit,Papaya,NA,7,NA,3
+Fruit,Mango,NA,7,NA,3
+Fruit,Peaches,NA,3,NA,Until ripe
+Fruit,Nectarines,NA,3,NA,Until ripe
+Fruit,Pears,NA,3,NA,3
+Fruit,Plums,NA,3,NA,3
+Vegetables,Artichokes (whole),NA,7,NA,1
+Vegetables,Asparagus,NA,3,240,NA
+Vegetables,Beans (fresh),NA,3,240,NA
+Vegetables,Beets,NA,7,180,1
+Vegetables,Bok choy,NA,2,300,NA
+Vegetables,Broccoli,NA,3,300,NA
+Vegetables,Brussels sprouts,NA,3,300,NA
+Vegetables,Cauliflower,NA,3,300,NA
+Vegetables,Cabbage,NA,7,300,NA
+Vegetables,"Carrots, ",NA,21,300,NA
+Vegetables,Parsnip,NA,21,300,NA
+Vegetables,Celery,NA,7,300,NA
+Vegetables,Corn (on the cob),NA,1,240,NA
+Vegetables,Cucumbers,NA,4,NA,NA
+Vegetables,Eggplant,NA,3,180,1
+Vegetables,Garlic,NA,7,30,30
+Vegetables,Ginger,NA,7,30,1
+Vegetables,Greens,NA,1,300,NA
+Vegetables,Herbs (fresh),NA,7,30,NA
+Vegetables,Leeks,NA,7,300,NA
+Vegetables,Lettuce (whole),NA,7,NA,NA
+Vegetables,Lettuce (loose leaf),NA,3,NA,NA
+Vegetables,Mushrooms,NA,2,300,NA
+Vegetables,Okra,NA,2,300,NA
+Vegetables,Onions,NA,60,300,14
+Vegetables,Spring onion,NA,7,300,NA
+Vegetables,Parsley,NA,7,30,NA
+Vegetables,Coriander,NA,7,30,NA
+Vegetables,Cilantro,NA,7,30,NA
+Vegetables,Peppers,NA,4,180,NA
+Vegetables,Capsicum,NA,4,180,NA
+Vegetables,Potatoes,NA,7,300,30
+Vegetables,Radishes,NA,10,NA,NA
+Vegetables,Rutabagas,NA,14,240,7
+Vegetables,Spinach,NA,1,300,NA
+Vegetables,Squash,NA,4,300,NA
+Vegetables,Turnips,NA,14,240,NA
+Vegetables,Tomatoes,NA,2,60,Ripe
+Vegetables,Zucchini,NA,14,14,4
+Frozen,Bagels,NA,7,60,NA
+Frozen,Bread Dough,NA,4,NA,NA
+Frozen,Crumbed fish,NA,NA,90,NA
+Frozen,"Fish (frozen, raw)",NA,1,180,NA
+Frozen,Frozen berries,NA,4,120,NA
+Frozen,Guacamole,NA,3,90,NA
+Frozen,Ice cream,NA,NA,60,NA
+Frozen,Lobster tails (frozen),NA,2,90,NA
+Frozen,Prawns (frozen),NA,1,364,NA
+Frozen,Soy meat substitutes (frozen),NA,3,365,NA
+Frozen,Tempeh,NA,7,365,NA
+Frozen,Ready meals,NA,NA,90,NA
+Frozen,Frozen vegetables,NA,3,240,NA
+Condiments,Pate,1,1,30,NA
+Deli,Salad mix,3,3,NA,NA
+Deli,Olives,14,14,NA,NA
+Deli,Cheesecake,7,7,60,NA
+Pantry,Tinned fruit,NA,NA,NA,365
+Pantry,Tinned vegetables,NA,NA,NA,365
+Pantry,Canned meat,NA,NA,NA,365
+Pantry,Cereal,NA,NA,NA,180
+Pantry,Dry beans,NA,NA,NA,NA
+Pantry,Tinned bean,NA,NA,NA,NA
+Pantry,Tinned soup,NA,NA,NA,NA
+Pantry,Pickles,NA,NA,NA,NA
+Pantry,Sauerkraut,NA,NA,NA,NA
+Pantry,Coffee - whole,NA,NA,NA,NA
+Pantry,Coffee - ground,NA,NA,NA,NA
+Pantry,Coffee - instant,NA,NA,NA,NA
+Baking,Baking powder,NA,NA,NA,180
+Baking,Baking soda,NA,NA,NA,540
+Baking,Biscuit mix,NA,NA,NA,450
+Baking,Pancake mix,NA,NA,NA,450
+Baking,Cake mix,NA,NA,NA,365
+Baking,Cornmeal,NA,365,NA,180
+Baking,Cornstarch,NA,NA,NA,540
+Baking,Flour (white),NA,NA,NA,180
+Baking,Flour (whole wheat),NA,180,NA,30
+Baking,"Frosting, canned",NA,7,NA,300
+Baking,Frosting mix,NA,NA,NA,365
+Baking,Chocolate,NA,NA,NA,540
+Baking,Chocolate syrup,NA,180,NA,730
+Baking,Cocoa,NA,NA,NA,3650
+Condiments,Barbecue sauce,NA,120,NA,365
+Condiments,Cocktail sauce,NA,180,NA,365
+Condiments,Tomato sauce,NA,180,NA,365
+Condiments,Ketchup,NA,180,NA,365
+Condiments,Chilli sauce,NA,180,NA,365
+Condiments,Chutney,NA,30,NA,365
+Condiments,Horseradish,NA,90,NA,365
+Condiments,Mayonnaise,NA,60,NA,60
+Condiments,Mustard,NA,365,NA,365
+Condiments,Olives,NA,14,NA,365
+Condiments,Pickles,NA,7,NA,365
+Condiments,Salad Dressings,NA,90,NA,300
+Condiments,Salsa,NA,30,NA,365
+Condiments,Taco sauce,NA,365,NA,365
+Pantry,Biscuits,NA,60,240,NA
+Pantry,Cookies,NA,60,240,NA
+Pantry,Crackers,NA,240,NA,NA
+Pantry,Diet powder mix,NA,NA,NA,180
+Pantry,Vanilla essence,NA,NA,NA,1095
+Pantry,Dried fruit,NA,180,NA,180
+Pantry,Gelatin,NA,NA,NA,1095
+Pantry,Jelly,NA,NA,NA,545
+Pantry,Gravy,NA,1,NA,730
+Pantry,dry gravy mix,NA,1,NA,730
+Pantry,Herbs (dry),NA,NA,NA,365
+Pantry,Honey,NA,NA,NA,365
+Pantry,Jam,NA,180,NA,365
+Pantry,Jerky,NA,60,NA,365
+Pantry,Juice box,NA,8,NA,120
+Pantry,Lentils (dry),NA,NA,NA,365
+Pantry,Marshmallows,NA,NA,NA,60
+Pantry,Evaporated milk,NA,4,NA,365
+Pantry,Molasses,NA,NA,NA,365
+Pantry,Mushrooms (dried),NA,NA,NA,180
+Pantry,Oil,NA,120,NA,180
+Pantry,nut oils,NA,NA,NA,180
+Pantry,Oil spray,NA,NA,NA,730
+Pantry,Nuts,NA,120,270,365
+Pantry,Pasta,NA,NA,NA,730
+Pantry,Egg noodles,NA,NA,NA,730
+Pantry,Peanut butter,NA,NA,NA,180
+Pantry,Popcorn kernels,NA,NA,NA,730
+Pantry,Popcorn,NA,NA,NA,60
+Pantry,Microwave popcorn,NA,NA,NA,365
+Pantry,Potato chips,NA,NA,NA,60
+Pantry,Pudding mix,NA,NA,NA,365
+Pantry,Rice,NA,180,NA,730
+Pantry,Brown rice,NA,180,NA,365
+Pantry,Flavoured rice mix,NA,NA,NA,180
+Pantry,Spaghetti sauce,NA,NA,NA,730
+Pantry,Taco sauce,NA,NA,NA,730
+Pantry,"Cream sauces, milk solids",NA,NA,NA,365
+Pantry,"Shortening, solid",NA,NA,NA,240
+Pantry,Soup mixes,NA,NA,NA,365
+Pantry,Stock powder,NA,NA,NA,365
+Pantry,Stock cubes,NA,NA,NA,365
+Pantry,"soy flour,",NA,180,NA,60
+Pantry,Textured soy protein (TSP),NA,3,NA,730
+Pantry,Re-hydrated soy protein,NA,4,NA,90
+Pantry,Spice,NA,NA,NA,730
+Pantry,Sugar (brown),NA,NA,NA,120
+Pantry,Sugar (white),NA,NA,NA,730
+Pantry,sugar substitutes,NA,NA,NA,730
+Pantry,Maple syrup,NA,NA,NA,730
+Pantry,Tapioca,NA,NA,NA,365
+Pantry,Tea (bags),NA,NA,NA,540
+Pantry,Tea (loose),NA,NA,NA,730
+Pantry,Sun-dried tomatoes,NA,180,NA,365
+Pantry,Vinegar,NA,NA,NA,730
+Pantry,Water (bottled),NA,NA,NA,365
+Pantry,Worcestershire Sauce,NA,NA,NA,365
+Baked goods,Bread,7,7,90,2
+Baked goods,Flat bread,4,4,120,2
+Baked goods,Tortilla,4,4,120,2
+Baked goods,Pita bread,4,4,120,2
+Baked goods,"Cake (chiffon, sponge, chocolate, angel food)",7,7,60,1
+Baked goods,Fruit cake,180,180,365,30
+Baked goods,Cheesecake,7,7,60,NA
+Baked goods,Cookies,60,60,240,14
+Baked goods,Croissants,7,7,60,1
+Baked goods,Doughnuts,7,7,30,1
+Baked goods,Eclairs (cream-filled),3,3,NA,1
+Baked goods,Muffins,7,7,60,1
+Baked goods,Pastry,7,7,60,1
+Baked goods,Danish,7,7,60,1
+Baked goods,Bread Rolls,7,7,60,3
