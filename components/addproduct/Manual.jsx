@@ -102,7 +102,6 @@ const Manual = () => {
         </Form>
       )}
     </Formik>
-    
   );
 }
 
