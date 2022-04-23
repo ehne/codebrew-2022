@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plus } from 'baseui/icon';
+import { ArrowDown, Filter, Plus } from 'baseui/icon';
 import { Button } from 'baseui/button';
 import { useStyletron } from 'baseui';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ import EmptyState from '../components/EmptyState';
 import ProductList from '../components/ProductList';
 import ErrorState from '../components/ErrorState';
 import LoadingSpinner from '../components/LoadingSpinner';
-
+import {ButtonGroup} from 'baseui/button-group';
 
 const Cards = () => {
   const [state, setState] = React.useState('loading')
@@ -74,6 +74,23 @@ const Index = () => {
   const [css, theme] = useStyletron();
   return (
     <>
+      
+      <ButtonGroup
+        disabled
+        shape="pill"
+        size="mini"
+        overrides={{
+          Root: {
+            style: ({ $theme }) => ({
+              marginTop: $theme.sizing.scale500,
+              marginBottom: $theme.sizing.scale500
+            })
+          }
+        }}
+      > 
+        <Button><Filter /></Button>
+        <Button isSelected startEnhancer={ArrowDown}>Expiry</Button>
+      </ButtonGroup>
       <Cards />
     </>
   )
